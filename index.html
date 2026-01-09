@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                            <i class="bi bi-instagram"></i>Instagram
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="mx-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Caption:</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                placeholder="Add the caption of your post here"></textarea>
+                                        </div>
+                                        <div class="d-flex gap-2 mt-2">
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="bi bi-camera-fill"></i>
+                                            </button>
+
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="bi bi-geo-alt-fill"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-fill"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container grid">
+        <ul class="nav nav-pills justify-content-center border-top py-2" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button"
+                    role="tab" aria-controls="grid" aria-selected="true">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="single-tab" data-bs-toggle="tab" data-bs-target="#single" type="button"
+                    role="tab" aria-controls="single" aria-selected="false">
+                    <i class="bi bi-square-fill"></i>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                <div class="container my-4">
+                    <div class="row row-cols-3 g-2 grid">
+
+                        <div class="col">
+                            <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=800&auto=format&fit=crop&q=80"
+                                alt="Dog">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+                                alt="Landscape">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?w=800&auto=format&fit=crop&q=80"
+                                alt="Dog">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU"
+                                alt="Landscape">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=800&auto=format&fit=crop&q=80"
+                                alt="Dog">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://fastly.picsum.photos/id/43/1280/831.jpg?hmac=glK-rQ0ppFClW-lvjk9FqEWKog07XkOxJf6Xg_cU9LI"
+                                alt="City">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format&fit=crop&q=80"
+                                alt="Dog">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
+                                alt="Hobbie">
+                        </div>
+
+                        <div class="col">
+                            <img src="https://fastly.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ"
+                                alt="City">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="single" role="tabpanel" aria-labelledby="single-tab">
+                <div class="container my-4 feed">
+
+                    <!-- POST 1 -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <strong>My Crazy dog Spark!</strong>
+                            <small class="text-muted">08/26</small>
+                        </div>
+
+                        <img src="https://placedog.net/900/600?id=101" class="card-img-top" alt="Dog photo" />
+
+                        <div class="card-body">
+                            <div class="fw-bold">204 Likes</div>
+                            <div class="text-muted small">
+                                This is an example of a very good photo that you can post on instagram
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- POST 2 -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <strong>The greatness of Croatia</strong>
+                            <small class="text-muted">04/09</small>
+                        </div>
+
+                        <img src="https://picsum.photos/id/1015/900/600" class="card-img-top" alt="Landscape photo" />
+
+                        <div class="card-body">
+                            <div class="fw-bold">26985 Likes</div>
+                            <div class="text-muted small">
+                                This is an example of a very good photo that you can post on instagram
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- POST 3 -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <strong>Amazing GOAL by Cristiano!</strong>
+                            <small class="text-muted">06/10</small>
+                        </div>
+
+                        <img src="https://picsum.photos/id/1025/900/1200" class="card-img-top" alt="Dog photo" />
+
+                        <div class="card-body">
+                            <div class="fw-bold">204 Likes</div>
+                            <div class="text-muted small">
+                                This is an example of a very good photo that you can post on instagram
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
